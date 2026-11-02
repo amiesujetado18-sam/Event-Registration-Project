@@ -53,5 +53,15 @@ The application stores participant records temporarily in an array while the pro
 | Amie Sujetado | Java GUI development, participant management, and array implementation |
 | Eugene Piolo Suminao | Object-oriented programming, participant classes, and project testing |
 
+## Data Structure Implementation
+
+The system uses a manually implemented array to store participant records.
+
+- **Array:** Stores participant objects.
+- **Count:** Tracks the current number of registered participants.
+- **Linear Search:** Checks each participant ID one by one to find a record.
+- **Deletion:** Removes a participant and shifts the remaining records to the left.
+
+These operations help manage participant records without using Java Collections.
 
 
