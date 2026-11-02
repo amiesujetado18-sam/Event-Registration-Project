@@ -14,6 +14,9 @@ public class Participant {
         this.email = email;
         this.registrationStatus = registrationStatus;
     }
+      public String getParticipantId() {
+        return participantId;
+    }
 
     public String getFullName() {
         return fullName;
@@ -38,4 +41,7 @@ public class Participant {
     public void setRegistrationStatus(String registrationStatus) {
         this.registrationStatus = registrationStatus;
     }
+    public String getParticipantDetails() {
+    return "Participant ID: " + participantId + "\nName: " + fullName + "\nEmail: " + email + "\nStatus: " + registrationStatus;
+}
 }
