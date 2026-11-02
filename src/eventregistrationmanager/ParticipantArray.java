@@ -24,6 +24,18 @@ public class ParticipantArray {
 
         return true;
     }
+        public Participant getParticipant(int index) {
+
+        if (index < 0 || index >= count) {
+            return null;
+        }
+
+        return participants[index];
+    }
+
+    public int getCount() {
+        return count;
+    }
 
 
 }
