@@ -51,6 +51,24 @@ public class ParticipantArray {
 
         return null;
     }
+        public boolean updateStatus(String id, String newStatus) {
+
+        Participant participant = searchById(id);
+
+        if (participant == null || newStatus == null) {
+            return false;
+        }
+
+        if (!newStatus.equalsIgnoreCase("Pending")
+                && !newStatus.equalsIgnoreCase("Approved")
+                && !newStatus.equalsIgnoreCase("Cancelled")) {
+            return false;
+        }
+
+        participant.setRegistrationStatus(newStatus);
+        return true;
+    }
+}
 
 
 
