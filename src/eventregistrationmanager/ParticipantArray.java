@@ -51,6 +51,7 @@ public class ParticipantArray {
 
         return null;
     }
+        
         public boolean updateStatus(String id, String newStatus) {
 
         Participant participant = searchById(id);

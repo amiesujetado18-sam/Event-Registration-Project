@@ -1,0 +1,7 @@
+/dist/
+/build/
+/nbproject/private/
+/nbproject/Makefile-*
+/nbproject/Package-*
+*.class
+*.log
