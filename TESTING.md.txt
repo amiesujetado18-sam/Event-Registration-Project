@@ -36,3 +36,10 @@
 - Verified that the method returned false.
 - Verified that the participant count remained 2.
 - Result: PASSED.
+
+### Participant Counting Test
+- Added two student participants and one guest participant.
+- Deleted the guest participant.
+- Verified that countStudents() returned 2.
+- Verified that countGuests() returned 0.
+- Result: PASSED.
