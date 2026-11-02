@@ -51,6 +51,27 @@ public class ParticipantArray {
 
         return null;
     }
+        public boolean deleteParticipant(String id) {
+    if (id == null || id.trim().isEmpty()) {
+        return false;
+    }
+
+    for (int i = 0; i < count; i++) {
+        if (participants[i].getParticipantId().equalsIgnoreCase(id)) {
+
+            for (int j = i; j < count - 1; j++) {
+                participants[j] = participants[j + 1];
+            }
+
+            participants[count - 1] = null;
+            count--;
+
+            return true;
+        }
+    }
+
+    return false;
+}
         
         public boolean updateStatus(String id, String newStatus) {
 
