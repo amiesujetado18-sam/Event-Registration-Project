@@ -15,4 +15,7 @@ public class GuestParticipant extends Participant {
     public void setOrganization(String organization) {
         this.organization = organization;
     }
+    public String getParticipantType() {
+    return "Guest";
+}
 }
