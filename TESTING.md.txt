@@ -1,0 +1,26 @@
+# Event Registration Manager - Testing
+
+## 1. Participant Registration
+- Test registering a student participant.
+- Test registering a guest participant.
+- Test registering with missing information.
+- Test registering a duplicate participant ID.
+
+## 2. Participant Search
+- Search using an existing participant ID.
+- Search using a non-existing participant ID.
+- Search using an empty ID.
+
+## 3. Participant Deletion
+- Delete a participant using an existing ID.
+- Try deleting a participant using a non-existing ID.
+
+## 4. Registration Status
+- Update a participant to Approved.
+- Update a participant to Pending.
+- Update a participant to Cancelled.
+- Try entering an invalid status.
+
+## 5. Participant Counting
+- Check the total number of students.
+- Check the total number of guests.
