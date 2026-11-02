@@ -82,5 +82,8 @@ public class ParticipantArray {
         public boolean isEmpty() {
     return count == 0;
 }
+        public boolean isFull() {
+    return count == participants.length;
+}
 }
     
