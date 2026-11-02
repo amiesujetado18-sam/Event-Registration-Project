@@ -31,3 +31,8 @@
 - Verified that the array count decreased from 3 to 2.
 - Verified that P001 and P003 remained in the array.
 - Result: PASSED.
+
+- Attempted to delete nonexistent participant ID P999.
+- Verified that the method returned false.
+- Verified that the participant count remained 2.
+- Result: PASSED.
