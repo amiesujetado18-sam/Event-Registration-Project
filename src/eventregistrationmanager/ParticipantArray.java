@@ -68,9 +68,5 @@ public class ParticipantArray {
         participant.setRegistrationStatus(newStatus);
         return true;
     }
-}
 
-
-
-}
     
