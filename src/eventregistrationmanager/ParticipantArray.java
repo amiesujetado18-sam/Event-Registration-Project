@@ -13,8 +13,11 @@ public class ParticipantArray {
 
         if (participant == null || count >= participants.length
         || participant.getParticipantId() == null
-        || participant.getParticipantId().trim().isEmpty()) {
+        || participant.getParticipantId().trim().isEmpty()|| participant.getEmail() == null
+        || participant.getEmail().trim().isEmpty())
+        {
     return false;
+    
 }
 
         if (searchById(participant.getParticipantId()) != null) {
