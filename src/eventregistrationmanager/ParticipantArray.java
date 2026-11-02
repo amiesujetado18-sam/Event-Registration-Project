@@ -83,6 +83,17 @@ public class ParticipantArray {
 
     return total;
 }
+        public int countGuests() {
+    int total = 0;
+
+    for (int i = 0; i < count; i++) {
+        if (participants[i] instanceof GuestParticipant) {
+            total++;
+        }
+    }
+
+    return total;
+}
         
         public boolean updateStatus(String id, String newStatus) {
 
