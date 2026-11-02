@@ -43,3 +43,10 @@
 - Verified that countStudents() returned 2.
 - Verified that countGuests() returned 0.
 - Result: PASSED.
+
+### Array Capacity Test
+- Added 100 participants to the array.
+- Attempted to add a 101st participant.
+- Verified that addParticipant() returned false.
+- Verified that the final participant count remained 100.
+- Result: PASSED.
