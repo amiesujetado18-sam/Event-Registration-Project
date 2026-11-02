@@ -75,3 +75,11 @@ The system uses linear search to find participants by their ID.
 
 This method makes it easy to find registered participants using their unique IDs.
 
+## Participant Counting
+
+The system can count participants based on their type.
+
+- `countStudents()` counts all student participants.
+- `countGuests()` counts all guest participants.
+
+Both methods check the participant array one by one and return the total number for each type.
