@@ -72,6 +72,17 @@ public class ParticipantArray {
 
     return false;
 }
+        public int countStudents() {
+    int total = 0;
+
+    for (int i = 0; i < count; i++) {
+        if (participants[i] instanceof StudentParticipant) {
+            total++;
+        }
+    }
+
+    return total;
+}
         
         public boolean updateStatus(String id, String newStatus) {
 
