@@ -24,3 +24,10 @@
 ## 5. Participant Counting
 - Check the total number of students.
 - Check the total number of guests.
+
+### Participant Deletion Test
+- Added three participants to the array.
+- Deleted participant P002 using deleteParticipant().
+- Verified that the array count decreased from 3 to 2.
+- Verified that P001 and P003 remained in the array.
+- Result: PASSED.
