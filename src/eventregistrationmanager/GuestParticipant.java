@@ -21,4 +21,7 @@ public class GuestParticipant extends Participant {
     public boolean isValidGuest() {
     return organization != null && !organization.trim().isEmpty();
 }
+    public String getParticipantDetails() {
+    return super.getParticipantDetails() + "\nOrganization: " + organization;
+}
 }
