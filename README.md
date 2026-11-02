@@ -83,3 +83,14 @@ The system can count participants based on their type.
 - `countGuests()` counts all guest participants.
 
 Both methods check the participant array one by one and return the total number for each type.
+
+## Participant Deletion
+
+The system can delete a participant using their ID.
+
+1. The program searches for the participant ID.
+2. If the ID exists, the participant is removed.
+3. The remaining participants move one position to the left.
+4. The participant count decreases by one.
+
+This keeps the array organized after a participant is deleted.
