@@ -26,4 +26,7 @@ public class StudentParticipant extends Participant {
     public void setCourse(String course) {
         this.course = course;
     }
+    public String getParticipantType() {
+    return "Student";
+}
 }
