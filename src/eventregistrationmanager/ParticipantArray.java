@@ -9,5 +9,22 @@ public class ParticipantArray {
         participants = new Participant[100];
         count = 0;
     }
+    public boolean addParticipant(Participant participant) {
+
+        if (participant == null || count >= participants.length) {
+            return false;
+        }
+
+        if (searchById(participant.getParticipantId()) != null) {
+            return false;
+        }
+
+        participants[count] = participant;
+        count++;
+
+        return true;
+    }
+
+
 }
     
