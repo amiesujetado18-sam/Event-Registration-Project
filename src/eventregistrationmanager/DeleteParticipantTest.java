@@ -93,19 +93,25 @@ public class DeleteParticipantTest {
         
         ParticipantArray duplicateArray = new ParticipantArray();
 
-Participant first = new Participant(
+        Participant first = new Participant(
         "P500", "Anna", "anna@gmail.com", "Pending");
 
-Participant duplicate = new Participant(
+        Participant duplicate = new Participant(
         "P500", "Mark", "mark@gmail.com", "Pending");
 
-System.out.println("First participant added: "
+        System.out.println("First participant added: "
         + duplicateArray.addParticipant(first));
 
-System.out.println("Duplicate ID added: "
+        System.out.println("Duplicate ID added: "
         + duplicateArray.addParticipant(duplicate));
 
-System.out.println("Final duplicate test count: "
+        System.out.println("Final duplicate test count: "
         + duplicateArray.getCount());
+        
+        Participant blankSearch = array.searchById("");
+        Participant nullSearch = array.searchById(null);
+
+        System.out.println("Blank ID search result: " + (blankSearch != null));
+        System.out.println("Null ID search result: " + (nullSearch != null));
     }
 }
