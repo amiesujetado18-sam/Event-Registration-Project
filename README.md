@@ -64,4 +64,14 @@ The system uses a manually implemented array to store participant records.
 
 These operations help manage participant records without using Java Collections.
 
+## Linear Search Implementation
+
+The system uses linear search to find participants by their ID.
+
+1. The search starts at the first participant.
+2. It checks each participant's ID one by one.
+3. If the ID matches, it returns the participant.
+4. If no match is found, it returns null.
+
+This method makes it easy to find registered participants using their unique IDs.
 
