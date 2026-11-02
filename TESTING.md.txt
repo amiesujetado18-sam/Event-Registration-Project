@@ -64,3 +64,9 @@
 - Verified that updateStatus() returned true.
 - Verified that the new status was Approved.
 - Result: PASSED.
+
+### Invalid Registration Status Test
+- Attempted to change participant P001's status to Waiting.
+- Verified that updateStatus() returned false.
+- Verified that the existing status remained Approved.
+- Result: PASSED.
