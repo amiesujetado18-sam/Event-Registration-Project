@@ -33,4 +33,7 @@ public class StudentParticipant extends Participant {
     return studentId != null && !studentId.trim().isEmpty()
             && course != null && !course.trim().isEmpty();
 }
+    public String getParticipantDetails() {
+    return super.getParticipantDetails() + "\nStudent ID: " + studentId + "\nCourse: " + course;
+}
 }
