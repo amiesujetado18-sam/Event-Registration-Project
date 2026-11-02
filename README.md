@@ -94,3 +94,9 @@ The system can delete a participant using their ID.
 4. The participant count decreases by one.
 
 This keeps the array organized after a participant is deleted.
+
+## Array Capacity
+
+The system uses an array with a maximum capacity of 100 participants.
+
+The program checks the current number of participants before adding a new record. If the array is already full, it prevents additional registration.
