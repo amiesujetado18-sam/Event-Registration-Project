@@ -14,7 +14,6 @@ public class Participant {
         this.email = email;
         this.registrationStatus = registrationStatus;
     }
-
     public String getParticipantId() {
         return participantId;
     }
