@@ -36,6 +36,22 @@ public class ParticipantArray {
     public int getCount() {
         return count;
     }
+        public Participant searchById(String id) {
+
+        if (id == null) {
+            return null;
+        }
+
+        for (int i = 0; i < count; i++) {
+
+            if (participants[i].getParticipantId().equalsIgnoreCase(id)) {
+                return participants[i];
+            }
+        }
+
+        return null;
+    }
+
 
 
 }
