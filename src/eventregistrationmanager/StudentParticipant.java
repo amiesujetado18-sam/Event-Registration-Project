@@ -29,4 +29,8 @@ public class StudentParticipant extends Participant {
     public String getParticipantType() {
     return "Student";
 }
+    public boolean isValidStudent() {
+    return studentId != null && !studentId.trim().isEmpty()
+            && course != null && !course.trim().isEmpty();
+}
 }
