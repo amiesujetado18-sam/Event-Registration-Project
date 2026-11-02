@@ -90,5 +90,22 @@ public class DeleteParticipantTest {
         System.out.println("Existing ID found: " + (found != null));
         System.out.println("Nonexistent ID found: "
         + (missingParticipant != null));
+        
+        ParticipantArray duplicateArray = new ParticipantArray();
+
+Participant first = new Participant(
+        "P500", "Anna", "anna@gmail.com", "Pending");
+
+Participant duplicate = new Participant(
+        "P500", "Mark", "mark@gmail.com", "Pending");
+
+System.out.println("First participant added: "
+        + duplicateArray.addParticipant(first));
+
+System.out.println("Duplicate ID added: "
+        + duplicateArray.addParticipant(duplicate));
+
+System.out.println("Final duplicate test count: "
+        + duplicateArray.getCount());
     }
 }
