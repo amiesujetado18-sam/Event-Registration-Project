@@ -11,9 +11,11 @@ public class ParticipantArray {
     }
     public boolean addParticipant(Participant participant) {
 
-        if (participant == null || count >= participants.length) {
-            return false;
-        }
+        if (participant == null || count >= participants.length
+        || participant.getParticipantId() == null
+        || participant.getParticipantId().trim().isEmpty()) {
+    return false;
+}
 
         if (searchById(participant.getParticipantId()) != null) {
             return false;
