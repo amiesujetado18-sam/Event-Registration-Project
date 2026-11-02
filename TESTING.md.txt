@@ -58,3 +58,9 @@
 - Verified that the participant was rejected.
 - Verified that the final participant count remained 0.
 - Result: PASSED.
+
+### Registration Status Update Test
+- Updated participant P001 from Pending to Approved.
+- Verified that updateStatus() returned true.
+- Verified that the new status was Approved.
+- Result: PASSED.
