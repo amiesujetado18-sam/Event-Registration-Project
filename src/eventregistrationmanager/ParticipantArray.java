@@ -68,5 +68,19 @@ public class ParticipantArray {
         participant.setRegistrationStatus(newStatus);
         return true;
     }
+        public int countByStatus(String status) {
+    int total = 0;
 
+    for (int i = 0; i < count; i++) {
+        if (participants[i].getRegistrationStatus().equalsIgnoreCase(status)) {
+            total++;
+        }
+    }
+
+    return total;
+}
+        public boolean isEmpty() {
+    return count == 0;
+}
+}
     
