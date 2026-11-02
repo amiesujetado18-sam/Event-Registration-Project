@@ -50,3 +50,11 @@
 - Verified that addParticipant() returned false.
 - Verified that the final participant count remained 100.
 - Result: PASSED.
+
+### Participant Input Validation Test
+- Attempted to add a participant with a blank ID.
+- Verified that the participant was rejected.
+- Attempted to add a participant with a blank email.
+- Verified that the participant was rejected.
+- Verified that the final participant count remained 0.
+- Result: PASSED.
